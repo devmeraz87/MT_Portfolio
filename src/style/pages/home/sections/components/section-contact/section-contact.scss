@@ -1,0 +1,59 @@
+.section-contact {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--section-contact-bg);
+
+    &-context {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    &-right {
+
+        &-heading {
+            display: flex;
+            flex-direction: column;
+            font-size: 40px;
+            color: #f7f7f7;
+            margin-bottom: 1.5rem;
+            font-weight: 100;
+        }
+
+        &-lead {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            color: #f7f7f7;
+            margin-bottom: 50px;
+        }
+
+
+        &-ex\&client {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            color: #f7f7f7;
+
+            ._number{
+                font-size: 70px;
+                line-height: 55px;
+            }
+
+            .experience, .client {
+                display: flex;
+                align-items: flex-end;
+                gap: 10px;
+
+            }
+        }
+    }
+}

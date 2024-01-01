@@ -1,0 +1,51 @@
+.home-team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(var(--home-team-bg-top-color) 50%, var(--home-team-bg-bottom-color) 50%);
+
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        
+        &-item {
+            background-color: var(--home-team-card-bg-color);
+            display: flex;
+            min-height: 428px;
+            // cursor: none;
+            align-items: flex-start;
+            gap: 40px;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-top: 214px;
+            transition: 0.3s;
+
+            .item-icon {
+                color: #fff;
+                font-size: 40px;
+            }
+
+            .project-name-and-number {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+
+                .project-name {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    font-size: 40px;
+                    line-height: 48px;
+                    font-weight: 600;
+                    color: var(--home-team-card-heading-color);
+                }
+
+                .project-number {
+                    color: var(--home-team-card-project-number-color);
+                }
+            }
+        }
+    }
+}
