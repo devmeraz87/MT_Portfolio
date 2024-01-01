@@ -39,7 +39,7 @@ function TestimonialsSlider() {
                     <SwiperSlide>
                         <div className="testimonial-slide">
                             <div className="testimonial-slide-img">
-                                <img src="http://localhost:3000/images/testimonial/testimonial.png" alt="Jared" data-cursor-text="Jared Warner" />
+                                <img src="/images/testimonial/testimonial.png" alt="Jared" data-cursor-text="Jared Warner" />
                             </div>
                             <div className="testimonial-slide-context">
                                 <div className="_quotes">
@@ -62,7 +62,7 @@ function TestimonialsSlider() {
                     <SwiperSlide>
                         <div className="testimonial-slide">
                             <div className="testimonial-slide-img">
-                                <img src="http://localhost:3000/images/testimonial/testimonial.png" alt="Jared" data-cursor-text="Jared Warner" />
+                                <img src="/images/testimonial/testimonial.png" alt="Jared" data-cursor-text="Jared Warner" />
                             </div>
                             <div className="testimonial-slide-context">
                                 <div className="_quotes">
@@ -85,7 +85,7 @@ function TestimonialsSlider() {
                     <SwiperSlide>
                         <div className="testimonial-slide">
                             <div className="testimonial-slide-img">
-                                <img src="http://localhost:3000/images/testimonial/testimonial.png" alt="Jared" data-cursor-text="Jared Warner" />
+                                <img src="/images/testimonial/testimonial.png" alt="Jared" data-cursor-text="Jared Warner" />
                             </div>
                             <div className="testimonial-slide-context">
                                 <div className="_quotes">

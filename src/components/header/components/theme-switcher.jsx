@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useThemeContext } from "react-theme-contexts"
 
 import { GoChevronLeft, GoChevronRight} from "react-icons/go"
+import { useEffect } from "react";
 
 const ThemeSwitcher = () => {
     const [showThemeSwitcherBtn, setShowThemeSwitcherBtn] = useState(false);
@@ -12,6 +13,11 @@ const ThemeSwitcher = () => {
         document.querySelector(".theme-switcher-wrapper").classList.toggle("theme-switcher-wrapper-active")
     }
 
+    useEffect(() => {
+
+        console.log(theme);
+
+    },[theme])
  
     return (
         <>
@@ -26,7 +32,7 @@ const ThemeSwitcher = () => {
                     </button>
                 </div>
                 <div className="theme-switcher-button">
-                    {theme === "dark" && (
+                    {theme === "dark" &&  (
                         <button onClick={() => switchTheme("light")} className="theme-button theme-button-dark">Light Mode</button>
                     )} 
                     {theme === "light" && (

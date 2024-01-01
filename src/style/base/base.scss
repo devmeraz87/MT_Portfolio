@@ -2,25 +2,27 @@
 
 @font-face {
     font-family: "SaolDisplay-Regular";
-    src: url(./fonts/SaolDisplay-Regular.woff) format("woff"), url(./fonts/SaolDisplay-Regular.woff2) format("woff2");
+    src: url(/fonts/SaolDisplay-Regular.woff) format("woff"), url(/fonts/SaolDisplay-Regular.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
   font-family: "SaolDisplay-LightItalic";
-  src: url(./fonts/SaolDisplay-LightItalic.woff) format("woff"), url(./fonts/SaolDisplay-LightItalic.woff2) format("woff2");
+  src: url(/fonts/SaolDisplay-LightItalic.woff) format("woff"), url(/fonts/SaolDisplay-LightItalic.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SaolDisplay-Light";
-  src: url(./fonts/SaolDisplay-Light.woff) format("woff"), url(./fonts/SaolDisplay-Light.woff2) format("woff2");
+  src: url(/fonts/SaolDisplay-Light.woff) format("woff"), url(/fonts/SaolDisplay-Light.woff2) format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "FontAwesome";
-  src: url(./fonts/fontawesome-webfont.woff) format("woff"), url(./fonts/fontawesome-webfont.woff2) format("woff2");
+  src: url(/fonts/fontawesome-webfont.woff) format("woff"),
+  //  url(/fonts/fontawesome-webfont.woff2) format("woff2")
+   ;
   font-weight: normal;
   font-style: normal;
 }

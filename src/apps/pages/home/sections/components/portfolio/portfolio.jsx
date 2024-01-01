@@ -49,7 +49,7 @@ const HomePortfolio = () => {
                                     </Link>
                                 </div>
                                 <div className="portfolio-item-img">
-                                    <img src="http://localhost:3000/images/web-showcase/seone.png" alt="Seone" />
+                                    <img src="/images/portfolio-images/seone.png" alt="Seone" />
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const HomePortfolio = () => {
                                     </Link>
                                 </div>
                                 <div className="portfolio-item-img">
-                                    <img src="http://localhost:3000/images/web-showcase/beserver.png" alt="Seone" />
+                                    <img src="/images/portfolio-images/beserver.png" alt="Beserver" />
                                 </div>
                             </div>
                             <div className="portfolio-item">
@@ -81,7 +81,7 @@ const HomePortfolio = () => {
                                     </Link>
                                 </div>
                                 <div className="portfolio-item-img">
-                                    <img src="http://localhost:3000/images/web-showcase/energetic.png" alt="Seone" />
+                                    <img src="/images/portfolio-images/energetic.png" alt="Energetic" />
                                 </div>
                             </div>
                         </div>
