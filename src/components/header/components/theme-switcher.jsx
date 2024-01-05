@@ -13,12 +13,6 @@ const ThemeSwitcher = () => {
         document.querySelector(".theme-switcher-wrapper").classList.toggle("theme-switcher-wrapper-active")
     }
 
-    useEffect(() => {
-
-        console.log(theme);
-
-    },[theme])
- 
     return (
         <>
             <div className="theme-switcher-wrapper">

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 import HomeHero from "./hero/hero";
 import HomeSections from "./sections/sections";
+import Footer from "../../../components/footer/footer";
 
 const Home = () => {
     const [loaded, setLoaded] = useState(false);
@@ -35,6 +36,7 @@ const Home = () => {
                 <HomeSections />
 
                 {/* Sections */}
+                <Footer />
 
 
             </div>

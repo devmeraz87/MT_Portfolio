@@ -86,6 +86,7 @@ const Loader = (props) => {
                         <h1></h1>
                     </div>
                     <div className="box-title">
+                        {/* <div className="title">MT</div> */}
                         <div className="title">MT</div>
                     </div>
                 </div>

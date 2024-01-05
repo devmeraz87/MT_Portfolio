@@ -1,5 +1,6 @@
 import { BiRightArrowAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import HomeContactForm from "./components/home-contact-form";
 
 const HomeContact = () => {
     
@@ -29,7 +30,15 @@ const HomeContact = () => {
                                 </span>
                             </Link>
                         </div>
-                        <div className="home-contact-right"></div>
+                        <div className="home-contact-right">
+                            <h1 className="section-heading">
+                                <span>Estimate your Project?</span>
+                                <span>Let me know here.</span>
+                            </h1>
+                            <div className="home-contact-form-container">
+                                <HomeContactForm />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
