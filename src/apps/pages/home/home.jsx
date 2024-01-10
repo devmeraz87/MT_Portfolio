@@ -36,6 +36,8 @@ const Home = () => {
                 <HomeSections />
 
                 {/* Sections */}
+
+                
                 <Footer />
 
 

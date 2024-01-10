@@ -1,7 +1,8 @@
 .home-team {
     padding-top: 40px;
     padding-bottom: 40px;
-    background: linear-gradient(var(--home-team-bg-top-color) 50%, var(--home-team-bg-bottom-color) 50%);
+    // background: linear-gradient(var(--home-team-bg-top-color) 50%, var(--home-team-bg-bottom-color) 50%);
+     background: var(--team-bg-color);
 
 
     &-cards {
@@ -10,7 +11,7 @@
         gap: 24px;
         
         &-item {
-            background-color: var(--home-team-card-bg-color);
+            background-color: var(--team-card-bg-color);
             display: flex;
             min-height: 428px;
             // cursor: none;
@@ -39,11 +40,11 @@
                     font-size: 40px;
                     line-height: 48px;
                     font-weight: 600;
-                    color: var(--home-team-card-heading-color);
+                    color: var(--team-card-heading-color);
                 }
 
                 .project-number {
-                    color: var(--home-team-card-project-number-color);
+                    color: var(--team-card-project\&number-color);
                 }
             }
         }

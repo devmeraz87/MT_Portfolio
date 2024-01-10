@@ -1,0 +1,44 @@
+.home-about {
+    padding: 100px 0;
+    background-color: var(--home-about-bg-color);
+
+
+    &-contexts {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &-left {
+
+    }
+
+    &-right {
+
+    }
+
+    &-heading {
+        margin-bottom: 2rem;
+        color: var(--home-about-heading-color);
+        font-weight: 100;
+    }
+
+    &-subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 140px;
+        margin-bottom: 3rem;
+        color: var(--home-about-subtitle-color);
+        font-weight: 600;
+    }
+
+
+    &-lead {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+        color: var(--home-about-lead-color);
+    }
+
+}

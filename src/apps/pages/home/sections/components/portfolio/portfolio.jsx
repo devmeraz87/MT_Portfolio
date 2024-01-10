@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-import {  BiRightArrowAlt } from "react-icons/bi"
-import { LuExternalLink } from "react-icons/lu";
+import GlobalLink from "../../../../../ui/globalLink/globalLink";
+import PortfolioItem from "../../../../../ui/portfolio-item/portfolio-item";
 
 const HomePortfolio = () => {
     
@@ -25,65 +24,14 @@ const HomePortfolio = () => {
                                     <span>voluptatem accusantium.</span>
                                 </p>
                                 <div>
-                                    <a className="_global_link_04MT" href="/portfolio">
-                                        <span className="__flex">
-                                            <span>Explore more</span>
-                                            <span>
-                                                <div className="_arrow_right">
-                                                   <BiRightArrowAlt />
-                                                </div>
-                                            </span>
-                                        </span>
-                                    </a>
+                                    <GlobalLink linkText={"Explore more"} linkPath={"/portfolio"} />
                                 </div>
                             </div>
-                            <div className="portfolio-item">
-                                <div className="portfolio-item-detls">
-                                    <Link to={"/"} target="_blank">
-                                        <span>Live here</span>
-                                        <span><LuExternalLink /></span>
-                                    </Link>
-                                    <Link to={"/"} target="_blank">
-                                        <span>Code</span>
-                                        <span><LuExternalLink /></span>
-                                    </Link>
-                                </div>
-                                <div className="portfolio-item-img">
-                                    <img src="/images/portfolio-images/seone.png" alt="Seone" />
-                                </div>
-                            </div>
+                            <PortfolioItem imgLink={"/images/portfolio-images/seone.png"} name={"Seone"} />
                         </div>
                         <div className="grid-col">
-                            <div className="portfolio-item">
-                                <div className="portfolio-item-detls">
-                                    <Link to={"/"} target="_blank">
-                                        <span>Live here</span>
-                                        <span><LuExternalLink /></span>
-                                    </Link>
-                                    <Link to={"/"} target="_blank">
-                                        <span>Code</span>
-                                        <span><LuExternalLink /></span>
-                                    </Link>
-                                </div>
-                                <div className="portfolio-item-img">
-                                    <img src="/images/portfolio-images/beserver.png" alt="Beserver" />
-                                </div>
-                            </div>
-                            <div className="portfolio-item">
-                                <div className="portfolio-item-detls">
-                                    <Link to={"/"} target="_blank">
-                                        <span>Live here</span>
-                                        <span><LuExternalLink /></span>
-                                    </Link>
-                                    <Link to={"/"} target="_blank">
-                                        <span>Code</span>
-                                        <span><LuExternalLink /></span>
-                                    </Link>
-                                </div>
-                                <div className="portfolio-item-img">
-                                    <img src="/images/portfolio-images/energetic.png" alt="Energetic" />
-                                </div>
-                            </div>
+                            <PortfolioItem imgLink={"/images/portfolio-images/beserver.png"} name={"Beserver"} />
+                            <PortfolioItem imgLink={"/images/portfolio-images/energetic.png"} name={"Energetic"} />
                         </div>
                     </div>
                 </div>
@@ -93,3 +41,5 @@ const HomePortfolio = () => {
 }
  
 export default HomePortfolio;
+
+
