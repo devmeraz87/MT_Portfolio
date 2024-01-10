@@ -10,7 +10,7 @@ const HomeBlog = () => {
                 <div className="container">
                     <div className="home-blog-contexts">
                         <div className="home-blog-contexts-left">
-                            <div className="section-subtitle">
+                            <div className="section-subtitle home-blog-section-subtitle ">
                                 <div className="line"></div>
                                 <span>Blog</span>
                             </div>

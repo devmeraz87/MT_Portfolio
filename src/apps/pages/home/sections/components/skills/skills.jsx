@@ -30,49 +30,49 @@ function SkillsMap() {
             name: "html5",
             logo: "/images/tech-logo/html5.edited.png",
             percentage: 10,
-            colorClass: "blue"
+            colorClass: "html"
         },
         {
             id: 2,
             name: "css3",
             logo: "/images/tech-logo/css3.edited.png",
             percentage: 20,
-            colorClass: "blue"
+            colorClass: "css"
         },
         {
             id: 3,
             name: "sass",
             logo: "/images/tech-logo/sass.png",
             percentage: 40,
-            colorClass: "blue"
+            colorClass: "sass"
         },
         {
             id: 4,
             name: "tailwind Css",
             logo: "/images/tech-logo/tailwind-css.png",
             percentage: 40,
-            colorClass: "blue"
+            colorClass: "tailwind"
         },
         {
             id: 5,
             name: "javaScript",
             logo: "/images/tech-logo/js.png",
             percentage: 30,
-            colorClass: "blue"
+            colorClass: "javascript"
         },
         {
             id: 6,
             name: "react Js",
             logo: "/images/tech-logo/react.png",
             percentage: 45,
-            colorClass: "blue"
+            colorClass: "reactjs"
         },
         {
             id: 7,
             name: "gsap",
             logo: "/images/tech-logo/gsap.svg",
             percentage: 20,
-            colorClass: "blue"
+            colorClass: "gsap"
         },
     ]
 

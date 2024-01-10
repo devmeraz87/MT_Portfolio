@@ -22,7 +22,7 @@
             display: flex;
             flex-direction: column;
             font-size: 40px;
-            color: #f7f7f7;
+            color: var(--contact-right-heading-color);
             margin-bottom: 1.5rem;
             font-weight: 100;
         }
@@ -31,7 +31,7 @@
             display: flex;
             flex-direction: column;
             font-size: 18px;
-            color: #f7f7f7;
+            color: var(--contact-right-lead-color);
             margin-bottom: 50px;
         }
 
@@ -40,8 +40,7 @@
             display: flex;
             align-items: center;
             gap: 50px;
-
-            color: #f7f7f7;
+            color: var(--contact-experiance-and-client-color);
 
             ._number{
                 font-size: 70px;

@@ -11,9 +11,24 @@ const HomeAbout = () => {
                         <div className="home-about-left">
                             <h1 className="home-about-heading">About Me</h1>
                             <h3 className="home-about-subtitle">
-                                <span>Web Developer. </span>
-                                <span>Coder. </span>
-                                <span>Designer. </span>
+                                <span>
+                                    <span>
+                                        <span>Web Developer. </span>
+                                        <img src="/images/hero/hero.jpg" alt="" />
+                                    </span>
+                                </span>
+                                <span>
+                                    <span>
+                                        <span>Coder. </span>
+                                        <img src="/images/hero/hero.jpg" alt="" />
+                                    </span> 
+                                </span>
+                                <span>
+                                    <span>
+                                        <span>Designer. </span>
+                                        <img src="/images/hero/hero.jpg" alt="" />
+                                    </span>
+                                </span>
                             </h3>
                             <div className="home-about-lead">
                                 <span>Creative and Innovative, Smart working person.</span>

@@ -21,11 +21,12 @@
         .footer-thanks {
             margin-bottom: 2rem;
             font-size: 20px;
-            color: var(--global-section-lead-color);
+            color: var(--footer-text-color);
 
             .footer-thanks-thik {
-                font-weight: 100;
-                color: #fff;
+                font-weight: 600;
+                color: var(--footer-text-thik-color);
+                letter-spacing: 1px;
             }
         }
 

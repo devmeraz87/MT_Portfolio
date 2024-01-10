@@ -1,18 +1,49 @@
+:root {
+    --global-link-text-color: #FFC25C;
+    --contact-form-button-icon-color: #FFC25C;
+
+
+    // >> Skills logo color
+    --skills-html-color: #FF4C1E;
+    --skills-css-color: #004CE8;
+    --skills-sass-color: #CC6699;
+    --skills-tailwind-color: #38BDF8;
+    --skills-javascript-color: #FFDF00;
+    --skills-reactjs-color: #7FC8F1;
+    // --skills-reactjs-color: #00ACEA;
+    --skills-gsap-color: #8ac640;
+}
+
+
+
 :root[data-theme="dark"] {
 
-    --primary-color: #;
-    --secondary-color: #;
+    --primary-color: #333646;
+    --secondary-color: #252734;
 
 
+    
     --body-bg-color: #333646;
+
+
+    
+    --section-subtitle-color: #999AA2;
+    --section-heading-color: #EBEBEC;
+    --section-lead-color: #CBCCD0;
+
+
+
+    // navbar
+    --navbar-text-color: #EBEBEC;
+
 
 
 
     // hero
     --hero-bg-color: #333646;
-    --hero-subtitle-color: #ddd;
-    --hero-subtitle-border-color: #ddd;
-    --hero-heading-color: #fff;
+    --hero-subtitle-color: #ccc;
+    --hero-subtitle-border-color: #ccc;
+    --hero-heading-color: #EBEBEC;
     --hero-heading-z-textshadow: 10px 0 0 #acaaaa;
     --hero-social-color: #ccc;
 
@@ -23,19 +54,24 @@
     --contact-subtitle-color: ;
     --contact-subtitle-line-color: ;
     --contact-lead-color: ;
+    --contact-right-heading-color: #EBEBEC;
+    --contact-right-lead-color: #CBCCD0;
+    --contact-experiance-and-client-color: #cbccd08f;
+
 
 
     // team 
     --team-bg-color: linear-gradient(#252734 50%, #333646 50%);
     --team-card-bg-color: #424657;
-    --team-card-heading-color: #fff;
+    --team-card-heading-color: #EBEBEC;
     --team-card-project\&number-color: #ccc;
+
 
 
     // Home about
     --home-about-bg-color: #333646;
     --home-about-heading-color: #ccc;
-    --home-about-subtitle-color: #fff;
+    --home-about-subtitle-color: #EBEBEC;
     --home-about-lead-color: #a3a1a1;
 
 
@@ -47,10 +83,6 @@
     --skills-card-bg-color: #606e805e;
     --skills-card-number-color: #ffffff;
 
-    --skills-red-color: red;
-    --skills-blue-color: blue;
-    --skills-yellow-color: yellow;
-    --skills-green-color: green;
 
 
     // portfolio
@@ -60,22 +92,35 @@
     --portfolio-subtitle-line-bg-color: ;
 
 
+
     // blog
     --blog-bg-color: #333646;
     --blog-bg-color: #252734;
     --blog-heading-color: ;
     --blog-lead-color: ;
+    --blog-publish-date-and-name-color: #999;
+    --blog-title-color: #CBCCD0;
+
+    --testimonial-text-color: #EBEBEC;
+    --testinonial-name-color: #ccc;
+    --testimonial-desig-color: #969696;
 
 
 
     // home-contact
     --home-contact-bg-color: #252734;
     --home-contact-bg-color: #333646;
+    --home-contact-placeholder-color: #ccc;
+    --home-contact-attachment-text-color: #ccc;
+    --home-contact-icon-color: #6d6d6d;
 
 
+    
     // footer
     --footer-bg-color: #252734; 
-    --footer-bg-color: #333646; 
+    // --footer-bg-color: #333646; 
+    --footer-text-color: #ccc;
+    --footer-text-thik-color: #fff;
 
 }
 

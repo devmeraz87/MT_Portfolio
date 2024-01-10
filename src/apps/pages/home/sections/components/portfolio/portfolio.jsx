@@ -11,7 +11,7 @@ const HomePortfolio = () => {
                     <div className="home-portfolio-grid">
                         <div className="grid-col">
                             <div className="home-portfolio-details">
-                                <div className="section-subtitle">
+                                <div className="section-subtitle home-portfolio-section-subtitle">
                                     <div className="line"></div>
                                     <span>Portfolio</span>
                                 </div>

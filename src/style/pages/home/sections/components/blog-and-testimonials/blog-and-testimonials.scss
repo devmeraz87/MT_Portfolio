@@ -37,7 +37,7 @@
 
                 .publish-date-and-name {
                     font-size: 12px;
-                    color: #999;
+                    color: var(--blog-publish-date-and-name-color);
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
@@ -55,7 +55,7 @@
                 }
 
                 .blog-title {
-                    color: #f7f7f7;
+                    color: var(--blog-title-color);
                 }
 
                 .right-arrow {
@@ -133,7 +133,7 @@
                             align-items: start;
                             margin-bottom: 36px;
                             line-height: 1.1;
-                            color: #fff;
+                            color: var(--testimonial-text-color);
                             letter-spacing: 1px;
                             word-spacing: 2px;
                             font-weight: 100;
@@ -143,14 +143,14 @@
                             .name {
                                 font-size: 20px;
                                 font-weight: 600;
-                                color: #fff;
+                                color: var(--testinonial-name-color);
                                 margin-bottom: 0.4rem;
                                 font-weight: 100;
                                 word-spacing: 5px;
                             }
 
                             .designation {
-                                color: #fff;
+                                color: var(--testimonial-desig-color);
                                 font-size: 14px;
                                 font-weight: 100;
                                 word-spacing: 4px;

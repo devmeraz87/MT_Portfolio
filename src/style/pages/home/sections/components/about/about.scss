@@ -31,6 +31,31 @@
         margin-bottom: 3rem;
         color: var(--home-about-subtitle-color);
         font-weight: 600;
+
+        span {
+            // &:nth-child(2) {
+
+
+                span {
+                    position: relative;
+                    display: inline-block;
+
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -150px;
+                        height: 120px;
+                        width: auto;
+                        vertical-align: middle;
+                        object-fit: cover;
+                        border-radius: 2px;
+                        user-select: none;
+                        pointer-events: none;
+                    }
+                }
+            // }
+        }
     }
 
 

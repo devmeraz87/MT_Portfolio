@@ -11,7 +11,7 @@ const SectionContact = () => {
                     <div className="section-contact-context">
                         <div className="section-contact-left">
                             <div>
-                                <div className="section-subtitle">
+                                <div className="section-subtitle section-contact-section-subtitle">
                                     <div className="line"></div>
                                     <span>Contact</span>
                                 </div>
