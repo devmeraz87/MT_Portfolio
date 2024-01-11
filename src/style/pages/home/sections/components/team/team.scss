@@ -9,22 +9,51 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
+
+        @media screen and (max-width: 999px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         
         &-item {
             background-color: var(--team-card-bg-color);
             display: flex;
-            min-height: 428px;
-            // cursor: none;
             align-items: flex-start;
             gap: 40px;
             padding-left: 4rem;
             padding-right: 4rem;
             padding-top: 214px;
+            padding-bottom: 2rem;
             transition: 0.3s;
+
+            @media screen and (max-width: 1600px) {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-top: 190px;
+                gap: 30px;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 1100px) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+                 gap: 20px;
+            }
 
             .item-icon {
                 color: #fff;
                 font-size: 40px;
+
+                @media screen and (max-width: 1600px) { 
+                    font-size: 30px;
+                }
+                @media screen and (max-width: 768px) { 
+                    font-size: 36px;
+                }
             }
 
             .project-name-and-number {
@@ -41,6 +70,16 @@
                     line-height: 48px;
                     font-weight: 600;
                     color: var(--team-card-heading-color);
+
+                    @media screen and (max-width: 1600px) {
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+
+                    @media screen and (max-width: 768px) { 
+                        font-size: 36px;
+                        line-height: 36px;
+                    }
                 }
 
                 .project-number {
