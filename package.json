@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^10.7.1",
     "fontfaceobserver": "^2.3.0",
     "gsap": "^3.12.4",
     "imagesloaded": "^5.0.0",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.21.1",
     "react-theme-contexts": "^0.1.3",
