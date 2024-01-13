@@ -7,26 +7,43 @@ export const useLoader = ($etFn) => {
     
 
     const fontSaol_Regular = new Promise((resolve) => {
-        new FontFaceObserver("SaolDisplay-Regular").load().then(() => {
-            resolve();
-        })
+        new FontFaceObserver("SaolDisplay-Regular")
+            .load(null, 5000)
+            .then(() => {
+                resolve();
+            })
+            .catch(() => {
+                resolve();
+            })
     });
 
     const fontSaol_LightItalic = new Promise((resolve) => {
-        new FontFaceObserver("SaolDisplay-LightItalic").load().then(() => {
-            resolve();
-        })
+        new FontFaceObserver("SaolDisplay-LightItalic")
+            .load(null, 5000)
+            .then(() => {
+                resolve();
+            })
+            .catch(() => {
+                resolve();
+            })
     })
 
 
     const fontSaol_Light = new Promise((resolve) => {
-        new FontFaceObserver("SaolDisplay-Light").load().then(() => {
-            resolve();
-        })
+        new FontFaceObserver("SaolDisplay-Light")
+            .load(null, 5000)
+            .then(() => {
+              resolve();
+            })
+            .catch(() => {
+                resolve();
+            })
     })
 
     // const fontOpenSans = new Promise((resolve) => {
-    //     new FontFaceObserver("Open Sans").load().then(() => {
+    //     new FontFaceObserver("Open Sans")
+    //    .load(null, 5000)
+    //    .then(() => {
     //         resolve();
     //     })
     // })
