@@ -12,6 +12,19 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;   
+        }
+        @media screen and (max-width: 768px) {
+            gap: 20px;   
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);            
+            gap: 25px;
+        }
         
         li {
             position: relative;
@@ -42,6 +55,21 @@
                     color: #fff;
                     font-weight: 100;
                     letter-spacing: 1px;
+
+    
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 1rem;
+
+                    img {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    .skill-name {
+                        font-size: 14px;
+                    }
                 }
             }
 
