@@ -23,7 +23,7 @@ const Loader = (props) => {
 
         if($fn) {
 
-            props.setLoaded(true);
+            props?.setLoaded(true);
 
             loader.fromTo(".wrapper-curtain", {
                 top: "40vh",
@@ -75,7 +75,7 @@ const Loader = (props) => {
            <div className="wrapper-loading">
                 <div className="wrapper-preloader">
                     <div className="box-preloader">
-                        <h1>{props.title}</h1>
+                        <h1>{props?.title}</h1>
                         <div className="progress-bar__container">
                             <div className="bar"></div>
                         </div>

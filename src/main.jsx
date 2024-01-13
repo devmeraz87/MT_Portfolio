@@ -9,11 +9,11 @@ import { BrowserRouter } from "react-router-dom"
 
 
 ReactDOM.createRoot(document.getElementById('MeraZTanji')).render(
-  // .> <React.StrictMode>
+  // <React.StrictMode>
     <BrowserRouter>
       <ThemeContextProvider>
         <MeraZ />
       </ThemeContextProvider>
     </BrowserRouter>
-  // .> </React.StrictMode>,
+  // </React.StrictMode>
 )

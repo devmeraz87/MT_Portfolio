@@ -1,0 +1,104 @@
+.add-skill {
+    height: 100vh;
+    height: 100svh;
+
+    .container {
+        height: 100%;
+    }
+
+    &-contexts {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-card {
+        flex-basis: 600px;
+        padding: 2rem;
+        border-radius: 4px;
+        background-color: #fff;
+
+        .section-heading {
+            color: #333;
+        }
+    }
+}
+
+
+
+
+// form
+
+.form-group {
+    position: relative;
+    &:not(:last-child) {
+         margin-bottom: 1.5rem;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .col {
+            flex: 1;
+        }
+    }
+
+    .form-control {
+        height: 40px;
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+
+        &:focus {
+            outline-color: #5767f3;
+        }
+    }
+
+    .label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 0.2rem;
+        color: #6e6e6e;
+    }
+
+    .file-label {
+        font-size: 40px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    #skill_image_file {
+        display: none;
+    }
+
+    .button-group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    .submit-button {
+        height: 36px;
+        padding: 0 28px;
+        background-color: #333;
+        border: none;
+        color: #fff;
+        border-radius: 2px;
+    }
+
+    .image-blob {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 50px;
+        object-fit: contain;
+    }
+
+}
+

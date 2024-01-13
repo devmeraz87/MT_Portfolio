@@ -60,6 +60,10 @@
                     grid-template-columns: repeat(3, 1fr);
                 }
 
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr 1.5fr 0.5fr;
+                }
+
                 .publish-date-and-name {
                     font-size: 12px;
                     color: var(--blog-publish-date-and-name-color);
