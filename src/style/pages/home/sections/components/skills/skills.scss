@@ -9,8 +9,11 @@
     .section-heading {
         text-align: center;
         color: var(--skills-heading-color);
+        margin-bottom: 4rem;
 
-
+        @media screen and (max-width: 600px) {
+            margin-bottom: 3rem;
+        }
     }
 
 
@@ -38,6 +41,10 @@
             background-color: var(--skills-card-bg-color);
             border-radius: 2px;
             backdrop-filter: blur(10px);
+
+            @media screen and (max-width: 600px) {
+                padding: 0.75rem;
+            }
 
             .skill-logo {
                 margin-bottom: 2rem;
@@ -75,6 +82,12 @@
 
                     .skill-name {
                         font-size: 14px;
+                    }
+                }
+
+                @media screen and (max-width: 450px) {
+                    .skill-name {
+                        font-size: 12px;
                     }
                 }
             }

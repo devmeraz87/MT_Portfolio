@@ -39,9 +39,9 @@ const SectionContact = () => {
                         </div>
                         <div className="section-contact-right">
                             <h1 className="section-contact-right-heading">
-                                <span>You can't use up creativity,</span>
-                                <span>the more you use, more you have</span>
-                                <span>in your signifant mind.</span>
+                                <span>You can't use up creativity, </span>
+                                <span>the more you use, more you have </span>
+                                <span>in your signifant mind. </span>
                             </h1>
                             <p className="section-contact-right-lead">
                                 <span>Sed ut perspiciatis unde omnis iste natus error sit</span>

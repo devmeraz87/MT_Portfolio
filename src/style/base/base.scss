@@ -117,6 +117,14 @@ ul, li {
   font-weight: 100;
   color: var(--global-link-text-color);
 
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 1.2rem;
+    font-size: 16px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -131,9 +139,14 @@ ul, li {
   }
 
   .__flex {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    @media screen and (max-width: 768px) {
+      gap: 0.75rem;
+    }
+
   }
 
   ._arrow_right {
@@ -141,6 +154,10 @@ ul, li {
     align-items: center;
     font-size: 30px;
     transition: 0.3s;
+
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+    }
   }
 
   &:hover {
@@ -170,6 +187,7 @@ ul, li {
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
+    margin-bottom: 1.5rem;
   }
 
   .line {
@@ -215,6 +233,7 @@ ul, li {
 
   @media screen and (max-width: 768px) {
     font-size: 30px;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -224,4 +243,8 @@ ul, li {
   font-size: 18px;
   color: var(--section-lead-color);
   font-weight: 100;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }

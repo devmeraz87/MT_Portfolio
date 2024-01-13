@@ -1,7 +1,10 @@
 .section-contact {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
     background-color: var(--contact-bg-color);
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 0;        
+    }
 
     &-context {
         display: flex;
@@ -17,6 +20,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media screen and (max-width: 1070px) {
+            margin-bottom: 2rem;
+        }
+
     }
 
 
@@ -29,6 +37,25 @@
             color: var(--contact-right-heading-color);
             margin-bottom: 1.5rem;
             font-weight: 100;
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 470px) {
+                font-size: 28px;
+            }
+            @media screen and (max-width: 470px) {
+                font-size: 25px;
+            }
+
+            @media screen and (max-width: 470px) {
+                font-size: 25px;
+                display: block;
+                line-break: auto;
+            }
+
+
         }
 
         &-lead {
@@ -37,6 +64,12 @@
             font-size: 18px;
             color: var(--contact-right-lead-color);
             margin-bottom: 50px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                display: block;
+                line-height: 17px;
+            }
         }
 
 
@@ -46,15 +79,34 @@
             gap: 50px;
             color: var(--contact-experiance-and-client-color);
 
+            
+
             ._number{
                 font-size: 70px;
                 line-height: 55px;
+
+
             }
 
             .experience, .client {
                 display: flex;
                 align-items: flex-end;
                 gap: 10px;
+
+            }
+
+            @media screen and (max-width: 500px) {
+                gap: 30px;
+
+                ._number {
+                    font-size: 60px;
+                    line-height: 45px;
+                }
+
+                .experience, .client {
+                    font-size: 14px;
+                }
+
 
             }
         }
