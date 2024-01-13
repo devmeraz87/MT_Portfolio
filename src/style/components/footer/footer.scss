@@ -1,8 +1,10 @@
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
     background-color: var(--footer-bg-color);
 
+    @media screen and (max-width: 768px) {
+        padding: 75px 0;
+    }
 
     .footer-context {
         display: flex;
@@ -10,6 +12,10 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+
+        @media screen and (max-width: 768px) {
+            gap: 40px;
+        }
 
         .footer-logo {
 
@@ -22,6 +28,8 @@
             margin-bottom: 2rem;
             font-size: 20px;
             color: var(--footer-text-color);
+            text-align: center;
+            line-height: 1.2;
 
             .footer-thanks-thik {
                 font-weight: 600;

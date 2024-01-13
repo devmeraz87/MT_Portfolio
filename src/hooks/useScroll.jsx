@@ -7,15 +7,23 @@ export const useScroll = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     if(window.scroller) window.scroller.destroy();
+    
+    window.addEventListener("touchmove", (e) => {
+        e.preventDefault()
+    }, {passive: false})
 
     window.scroller = new LocomotiveScroll({
         el: document.querySelector(".__MT__scroll"),
         smooth: true,
         smartphone: {
             smooth: true,
+            direction: "vertical",
+            gestureDirection: "vertical"
         },
         tablet: {
-            smooth: true
+            smooth: true,
+            direction: "vertical",
+            gestureDirection: "vertical"
         }
     })
 

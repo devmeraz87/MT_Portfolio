@@ -1,6 +1,5 @@
 .home-contact {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
     background-color: var(--home-contact-bg-color);
 
 
@@ -13,6 +12,26 @@
             flex-basis: 600px;
         }
     }
+
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 0;
+
+        &-contexts {
+            flex-direction: column;
+            gap: 50px;
+
+            .home-contact-right {
+                width: 100%;
+                flex-basis: auto;
+
+                .section-heading {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
 }
 
 
