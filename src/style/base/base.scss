@@ -168,6 +168,10 @@ ul, li {
   color: var(--section-subtitle-color);
   margin-bottom: 2rem;
 
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
   .line {
     height: 2px;
     width: 16px;
@@ -208,6 +212,10 @@ ul, li {
   font-size: 40px;
   color: var(--section-heading-color);
   font-weight: 100;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .section-lead {
