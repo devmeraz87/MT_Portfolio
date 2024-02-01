@@ -1,0 +1,23 @@
+@import "./variable/variable.scss";
+@import "./base/base.scss";
+@import "./locomotive/locomotive-scroll.scss";
+
+@import "./components/components.scss";
+
+@import "./pages/pages.scss";
+
+
+
+/* prevent rendering issues (~1px of body background shining through) in between sections with same background-color */
+
+.has-scroll-smooth [data-scroll-container] {
+    will-change: transform;
+}
+  
+  /* workaround for items disappearing when scrolling down and re-appearing when scrolling back up */
+  
+  /* https://github.com/locomotivemtl/locomotive-scroll/issues/435 */
+  
+  .has-scroll-smooth [data-scroll-container] {
+    perspective: 999999px !important;
+  }

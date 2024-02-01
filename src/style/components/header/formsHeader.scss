@@ -1,0 +1,104 @@
+.forms-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 64px;
+    background-color: #333;
+    box-shadow:  0 0 1px #999;
+    z-index: 3;
+
+    .container {
+        height: 100%;
+    }
+
+    &-contexts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        .logo\&\hamburger {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .forms-hamburger {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: inherit;
+                }
+
+                .hamburger-btn {
+                    height: 26px;
+                    width: 30px;
+                    background-color: transparent;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.5px 2px;
+                    border-radius: 2px;
+                    transition: 0.3s;
+                    
+                    &:hover {
+                        background-color: #ffffff1f;
+                    }
+
+                    .hamburger-btn-icon {
+                        position: relative;
+                        height: 2px;
+                        width: 90%;
+                        background-color: #fff;
+
+                        &::before, &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            height: 2px;
+                            width: 100%;
+                            background-color:#fff;
+                        }
+
+                        &::before {
+                            transform: translateY(-8px);
+                        }
+
+                        &::after {
+                            transform: translateY(8px);
+                        }
+                    }
+                }
+            }
+
+
+            .brand-logo {
+            
+                img {
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+
+        .forms-header-links {
+            display: flex;
+            align-items: center;
+
+            .forms-header-link {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #ccc;
+                transition: 0.2s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+

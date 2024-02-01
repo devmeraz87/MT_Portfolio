@@ -1,0 +1,35 @@
+.m {
+    padding: 180px 0;
+
+    .container {
+        max-width: 1500px;
+    }
+
+    &-image-container {
+        margin: auto;
+        img {
+            width: 100%;
+            height: 160vh;
+            object-fit: cover;
+
+
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        padding: 100px 0;
+
+        .container {
+            max-width: 90%;
+        }
+
+        &-image-container {
+
+            img {
+                height: 600px;
+            }
+        }
+        
+    }
+}

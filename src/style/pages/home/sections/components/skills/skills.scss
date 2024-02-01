@@ -1,0 +1,168 @@
+.skills {
+    padding: 100px 0;
+    background: var(--skills-bg-color);
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 0;
+    }
+
+    .section-heading {
+        text-align: center;
+        color: var(--skills-heading-color);
+        margin-bottom: 4rem;
+
+        @media screen and (max-width: 600px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+
+    .skill-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;   
+        }
+        @media screen and (max-width: 768px) {
+            gap: 20px;   
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);            
+            gap: 15px;
+        }
+        
+        li {
+            position: relative;
+            padding: 1rem;
+            background-color: var(--skills-card-bg-color);
+            border-radius: 2px;
+            backdrop-filter: blur(10px);
+
+            @media screen and (max-width: 600px) {
+                padding: 0.75rem;
+            }
+
+            .skill-logo {
+                margin-bottom: 2rem;
+
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                user-select: none;
+
+                img {
+                    min-height: 40px;
+                    max-height: 40px;
+                    max-width: 40px;
+                    object-fit: contain;
+                }
+
+                .skill-name {
+                    &::first-letter {
+                        text-transform: capitalize;
+                    }
+                    color: #fff;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+
+    
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 1rem;
+
+                    img {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    .skill-name {
+                        font-size: 14px;
+                    }
+                }
+
+                @media screen and (max-width: 450px) {
+                    .skill-name {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+
+            .percentage-container {
+                // height: 220px;
+                // width: 220px;
+                margin: auto;
+
+                .percentage-circle {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+
+                    .circular-chart {
+
+                        .circle-bg {
+                            fill: none;
+                            stroke: #eee;
+                            stroke-width: 3.8;
+                        }
+
+                        .circle {
+                            fill: none;
+                            stroke-width: 3.8;
+                            stroke-linecap: round;
+                            animation: progress 1s ease-out forwards;
+                        }
+
+                        @keyframes progress {
+                            0% {
+                              stroke-dasharray: 0 100;
+                            }
+                        }
+
+                        .percentage {
+                            fill: var(--skills-card-number-color);
+                            // font-family: sans-serif;
+                            font-size: 0.5em;
+                            text-anchor: middle;
+                            font-weight: 100;
+                            user-select: none;
+                          }
+
+                        &.html .circle {
+                            stroke: var(--skills-html-color);
+                        }
+
+                        &.css .circle {
+                            stroke: var(--skills-css-color);
+                        }
+
+                        &.sass .circle {
+                            stroke: var(--skills-sass-color);
+                        }
+
+                        &.tailwind .circle {
+                            stroke: var(--skills-tailwind-color);
+                        }
+
+                        &.javascript .circle {
+                            stroke: var(--skills-javascript-color);
+                        }
+
+                        &.reactjs .circle {
+                            stroke: var(--skills-reactjs-color);
+                        }
+
+                        &.gsap .circle {
+                            stroke: var(--skills-gsap-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

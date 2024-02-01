@@ -1,0 +1,98 @@
+.home-portfolio {
+    padding: 120px 0;
+    background-color: var(--portfolio-bg-color);
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 0;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 180px;
+
+        @media screen and (max-width: 1024px) {
+            gap: 130px;
+        }
+        @media screen and (max-width: 924px) {
+            gap: 100px;
+        }
+
+        @media screen and (max-width: 768px) {
+            gap: 50px;
+        }
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .grid-col {
+            display: flex;
+            flex-direction: column;
+            gap: 180px;
+
+
+            @media screen and (max-width: 1024px) {
+                gap: 130px;
+            }
+            @media screen and (max-width: 924px) {
+                gap: 100px;
+            }
+    
+            @media screen and (max-width: 768px) {
+                gap: 50px;
+            }
+
+            .portfolio-item {
+                position: relative;
+
+                &-detls {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    transform: scale(0.8);
+                    opacity: 0;
+                    transition: 0.4s;
+                    background-color: #3333339f;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+
+                    a {
+                        padding: 0.75rem 1.75rem;
+                        border: 2px solid #fff;
+                        color: #fff;
+                        transition: 0.3s;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            box-shadow:  5px 5px 0 #fff;
+                        }
+                    }
+                }
+
+                &:hover {
+                    
+                    .portfolio-item-detls {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+
+                &-img {
+                    img {
+                        width: 100%;
+                        max-height: 648px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.forms {
+    min-height: 100vh;
+
+    .forms-nav-container {
+        background-color: #333;
+    }
+
+    .forms-container {
+        padding-left: 300px;
+
+        @media screen and (max-width: 768px) {
+            padding-left: 0;
+        }
+
+        .forms-contexts {
+            padding-top: 150px;
+
+
+
+            .default-forms-contexts {
+                padding-top: 50px;
+                padding-left: 200px;
+                color: #fff;
+
+                h1 {
+                    margin-bottom: 1rem;
+                    font-weight: 100;
+                    font-size: 40px;
+                }
+
+                p {
+                    margin-bottom: 2rem;
+                    font-weight: 100;
+                }
+
+                button {
+                    display: none;
+                }
+
+                @media screen and (max-width: 992px) {
+                    padding-left: 100px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    padding-top: 20px;
+                    padding-left: 80px;
+      
+                    button {
+                        display: flex;
+                        padding: 0.7rem 28px;
+                        border: none;
+                        border-radius: 1px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+@import "./add-skill/add-skill.scss";

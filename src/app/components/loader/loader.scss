@@ -1,0 +1,97 @@
+.wrapper-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    // border: 1px solid red;
+
+
+    .wrapper-preloader {
+        position: absolute;
+        z-index: 998;
+        height: 100%;
+        width: 100%;
+        background-color: #15151d;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .box-preloader {
+            display: inline-block;
+            transition: padding-bottom 0.4s ease-out;
+
+            h1 {
+                font-size: 20px;
+                color: #fff;
+                font-weight: 100;
+            }
+
+            .progress-bar__container {
+                width: 100%;
+                margin: 3vh auto;
+                margin-bottom: 0;
+                height: 1px;
+                background-color: rgba(255, 255, 255, 0.4);
+
+                .bar {
+                    width: 0%;
+                    height: 100%;
+                    // background-color: #9a8a68;
+                    background-color: red;
+                }
+            }
+        }
+    }
+
+    .wrapper-curtain {
+        position: absolute;
+        top: 40%;
+        z-index: 997;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #f9f5ef;
+
+        .MT {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 9;
+            transform: translate3d(-50%, -50%, 0);
+
+            h1 {
+                // font-size: 300px;
+                // height: 30vh;
+            }
+
+        }
+
+        .box-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+                text-align: center;
+                font-family: "SaolDisplay-Regular", sans-serif;
+                font-size: 13vw;
+                font-weight: 400;
+                color: #9a8a68;
+            }
+        }
+    }
+}

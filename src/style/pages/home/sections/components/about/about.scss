@@ -1,0 +1,176 @@
+.home-about {
+    padding: 100px 0;
+    background-color: var(--home-about-bg-color);
+
+    @media screen and (max-width: 768px) {
+        padding: 80px 0;
+    }
+
+
+    &-contexts {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &-left {
+
+    }
+
+    &-right {
+
+    }
+
+    &-heading {
+        margin-bottom: 2rem;
+        color: var(--home-about-heading-color);
+        font-weight: 100;
+
+        @media screen and (max-width: 800px) {
+            font-size: 24px;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &-subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 140px;
+        margin-bottom: 3rem;
+        color: var(--home-about-subtitle-color);
+        font-weight: 600;
+
+
+        span {
+            // &:nth-child(2) {
+
+
+                span {
+                    position: relative;
+                    display: inline-block;
+
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -150px;
+                        height: 120px;
+                        width: auto;
+                        vertical-align: middle;
+                        object-fit: cover;
+                        border-radius: 2px;
+                        user-select: none;
+                        pointer-events: none;
+
+                        @media screen  and (max-width: 1000px) {
+                            height: 90px;
+                            right: -120px;
+                        }
+
+                        @media screen  and (max-width: 768px) {
+                            height: 60px;
+                            right: -80px;
+                            display: none;
+                        }
+
+                        @media screen  and (max-width: 668px) {
+                            height: 45px;
+                            right: -70px;
+                        }
+
+                        @media screen  and (max-width: 568px) {
+                            height: 40px;
+                            right: -60px;
+                        }
+                    }
+                }
+            // }
+        }
+
+
+        @media screen and (max-width: 1180px) {            
+            font-size: 120px;
+        }
+        @media screen and (max-width: 1000px) {            
+            font-size: 100px;
+        }
+
+        @media screen and (max-width: 895px) {            
+            font-size: 85px;
+        }
+
+        @media screen and (max-width: 768px) {            
+            font-size: 150px;
+            gap: 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            font-size: 140px;
+        }
+        @media screen and (max-width: 650px) {
+            font-size: 128px;
+        }
+        @media screen and (max-width: 601px) {
+            font-size: 115px;
+        }
+        @media screen and (max-width: 555px) {
+            font-size: 106px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 92px;
+        }
+        @media screen and (max-width: 450px) {
+            font-size: 85px;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 75px;
+        }
+
+        @media screen and (max-width: 380px) {
+            font-size: 70px;
+        }
+    }
+
+
+    &-lead {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+        color: var(--home-about-lead-color);
+
+        @media screen and (max-width: 1600px) {
+            font-size: 55px;
+        }
+
+        @media screen and (max-width: 1210px) {
+            display: inline-block;            
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 50px;            
+        }
+
+        @media screen and (max-width: 895px) {
+            font-size: 45px;            
+        }
+
+        @media screen and (max-width: 730px) {
+            font-size: 40px;            
+        }
+
+        @media screen and (max-width: 560px) {
+            font-size: 35px;            
+            line-height: 1.1;
+        }
+
+        @media screen and (max-width: 490px) {
+            font-size: 30px;            
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 24px;            
+        }
+    }
+
+}

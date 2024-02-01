@@ -1,0 +1,31 @@
+.add-skill {
+
+    .container {
+        height: 100%;
+    }
+
+    &-contexts {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-card {
+        flex-basis: 600px;
+        padding: 2rem;
+        border-radius: 4px;
+        background-color: #fff;
+
+        .section-heading {
+            color: #333;
+        }
+    }
+
+    .error {
+        position: absolute;
+        font-size: 12px;
+        padding: 3px 0;
+        color: red;
+    }
+}
