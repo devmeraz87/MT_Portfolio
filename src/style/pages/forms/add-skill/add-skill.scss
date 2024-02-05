@@ -2,6 +2,14 @@
 
     .container {
         height: 100%;
+
+        @media screen and (max-width: 880px) {
+            padding: 0 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 0 15px;            
+        }
     }
 
     &-contexts {
@@ -19,13 +27,9 @@
 
         .section-heading {
             color: #333;
+            // color: #00a2ff;
         }
     }
-
-    .error {
-        position: absolute;
-        font-size: 12px;
-        padding: 3px 0;
-        color: red;
-    }
 }
+
+

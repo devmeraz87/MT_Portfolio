@@ -5,7 +5,7 @@ const GlobalLink = ({linkText, linkPath, linkTarget}) => {
     
     return (
         <>
-            <Link className="_global_link_04MT" href={linkPath} target={linkTarget}>
+            <Link className="_global_link_04MT" to={linkPath} target={linkTarget}>
                 <span className="__flex">
                     <span>{linkText}</span>
                     <span>

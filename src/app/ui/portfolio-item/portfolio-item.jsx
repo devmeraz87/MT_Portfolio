@@ -11,8 +11,8 @@ const PortfolioItem = ({
         <>
             <div className="portfolio-item">
                 <div className="portfolio-item-detls">
-                    <PortfolioDLink linkPath={liveLink} linkText={"Live here"} />
-                    <PortfolioDLink linkPath={codeLink} linkText={"Code"} />
+                    <PortfolioDLink linkPath={liveLink || "#"} linkText={"Live here"} />
+                    <PortfolioDLink linkPath={codeLink || "#"} linkText={"Code"} />
                 </div>
                 <div className="portfolio-item-img">
                     <img src={imgLink} alt={name} />

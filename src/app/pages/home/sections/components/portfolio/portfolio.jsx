@@ -24,7 +24,7 @@ const HomePortfolio = () => {
                                     <span>voluptatem accusantium.</span>
                                 </p>
                                 <div>
-                                    <GlobalLink linkText={"Explore more"} linkPath={"/portfolio"} />
+                                    <GlobalLink linkText={"Explore morex"} linkPath={"/portfolios"} />
                                 </div>
                             </div>
                             <PortfolioItem imgLink={"/images/portfolio-images/seone.png"} name={"Seone"} />

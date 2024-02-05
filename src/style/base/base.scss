@@ -280,6 +280,18 @@ ul, li {
       }
   }
 
+  .textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    &:focus {
+      outline-color: #5767f3;
+    }
+
+  }
+
   .label {
       font-size: 14px;
       display: block;
@@ -295,6 +307,7 @@ ul, li {
       display: flex;
       align-items: center;
       gap: 10px;
+      display: inline-block;
       
       span {
         color: red;
@@ -304,6 +317,10 @@ ul, li {
 
   #skill_image_file {
       display: none;
+  }
+
+  #add_portfolio_image_file {
+    display: none;
   }
 
   .button-group {
@@ -338,5 +355,11 @@ ul, li {
       object-fit: contain;
   }
 
+  .error {
+    position: absolute;
+    font-size: 12px;
+    padding: 3px 0;
+    color: red;
+  }
 }
 

@@ -1,0 +1,158 @@
+.portfolios-list {
+    &-container {
+        margin-bottom: 4rem;
+        margin-top: 8rem;
+
+        @media screen and (max-width: 1400px) {
+            margin-top: 4rem;
+        }
+        @media screen and (max-width: 600px) {
+            margin-top: 3rem;
+        }
+    }
+
+    &-header {
+        margin-bottom: 2rem;
+    }
+
+    &-heading {
+        color: #fff;
+        font-weight: 100;
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @media screen and (max-width: 1500px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 1180px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 880px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .portfolios-list-item {
+            background-color: #fff;
+            position: relative;
+            box-shadow:  0 0 1px #999;
+    
+            .portfolio {
+    
+                &-image {
+
+                    img {
+                        width: 100%;
+                        min-height: 200px;
+                        max-height: 200px;
+                        object-fit: cover;
+
+                        @media screen and (min-width: 768px) and (max-width: 880px) {
+                            max-height: 250px;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            max-height: 150px;
+                        }
+                    }
+                }
+
+                &-details {
+                    padding: 1.5rem 1rem;
+
+                    @media screen and (max-width: 768px) {
+                        padding: 1rem 0.75rem;
+                    }
+                }
+
+                &-name {
+                    font-size: 20px;
+                    margin-bottom: 0.5rem;
+                }
+
+                &-lead {
+                    margin-bottom: 1rem;
+                    
+                    @media screen and (max-width: 768px) {
+                        font-size: 15px;
+                    }
+                }
+
+                &-links {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    @media screen and (max-width: 768px) {
+                        gap: 10px;
+                    }
+
+                    a {
+                        width: 100%;
+                        text-align: center;
+                        border: 1px solid #333;
+                        padding: 0.5rem 0.75rem;
+                        color: #333;
+
+                        &:hover {
+                            background-color: #333;
+                            color: #fff;
+                        }
+                    }
+                }
+    
+            }
+
+
+            .delete-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transition: 0.3s;
+                border-radius: 50%;
+                border-top-right-radius: 0;
+                
+                @media screen and (min-width: 768px) {
+                    opacity: 0;
+                }
+
+                &:hover {
+                    background-color: #ffffff;
+                }
+
+                button {
+                    height: 40px;
+                    width: 40px;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #ff00001f;
+                    color: red;
+                    border-radius: 50%;
+                    border-top-right-radius: 0;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                &:hover {
+                    .delete-button {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+}

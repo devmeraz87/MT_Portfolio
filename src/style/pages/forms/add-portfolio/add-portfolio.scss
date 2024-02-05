@@ -1,0 +1,20 @@
+.add-portfolio {
+
+    &-contexts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-card {
+        padding: 2rem;
+        background-color: #fff;
+        flex-basis: 950px;
+        border-radius: 3px;
+        margin-bottom: 2rem;
+
+        .section-heading {
+            color: #333;
+        }
+    }
+}

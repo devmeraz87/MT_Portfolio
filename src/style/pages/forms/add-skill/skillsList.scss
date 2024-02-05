@@ -1,0 +1,94 @@
+.skills {
+    &-list-container {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    &-list-header {
+        margin-bottom: 3rem;
+    }
+
+    &-list-heading {
+        color: #fff;
+        font-weight: 100;
+    }
+
+    &-list {
+        .skill {
+
+            &-item {
+                position: relative;
+                margin-bottom: 2rem;
+                display: flex;
+                align-items: center;
+                padding: 1.5rem;
+                background-color: #fff;
+            }        
+
+            &-image {
+                flex-basis: 150px;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    object-fit: contain;
+                }
+            }
+
+            &-name {
+                flex-basis: 150px;
+                font-size: 20px;
+            }
+
+            &-color {
+                flex-basis: 150px;
+                padding: 0.5rem;
+            }
+
+            &-achived {
+                flex-basis: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-delete {
+                position: absolute;
+                right: 24px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #33333315;
+                border: none;
+                padding: 0.25rem;
+                border-radius: 3px;
+                transition: 0.2s;
+                
+                opacity: 0;
+
+                &:hover {
+                    color: red;
+                    background-color: rgba(255, 0, 0, 0.082);
+                }
+            }
+
+            &-item:hover {
+                .skill-delete {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .loading  {
+            color: #fff;
+        }
+        .noposts {
+            h4 {
+                font-weight: 100;
+                color: #fff;
+            }
+        }
+    }
+}

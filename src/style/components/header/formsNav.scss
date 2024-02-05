@@ -14,7 +14,8 @@
 }
 
 .forms-nav {
-    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
     position: fixed;
     left: 0;
     top: 0;
@@ -24,6 +25,7 @@
     margin-top: 64px;
     z-index: 2;
     transition: 0.3s;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
         transform: translateX(-320px);
@@ -34,7 +36,8 @@
     }
 
     &-header {
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #524f4f;
     }
 
     &-heading {
@@ -44,12 +47,48 @@
     }
 
     &-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 58px);
+        overflow: auto;
+
         
+        &::-webkit-scrollbar {
+            display: inherit;
+            width: 10px;
+            background-color: transparent;
+            // border-radius: 10px;
+            transition: 1s;
+            border: 2px solid transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            width: 10px;
+            // border-radius: 10px;
+        }
+
+
+        &:hover {
+            &::-webkit-scrollbar {
+                background-color: #dddddd3b;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(27, 25, 25);
+    
+            }
+    
+        }
+
     }
 
     &-links {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+
         li {
-            border-bottom: 1px solid #999;
+            margin-right: 0.75rem;
         }
     }
 

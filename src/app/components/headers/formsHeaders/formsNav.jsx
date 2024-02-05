@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const FormsHeader = ({showFormsNav, handleFormsNav}) => {
-    
 
  
     return (
@@ -14,6 +13,8 @@ const FormsHeader = ({showFormsNav, handleFormsNav}) => {
                     <ul className="forms-nav-links">
                         <li><Link onClick={handleFormsNav} className="forms-nav-link" to={"/forms"}>Forms</Link></li>
                         <li><Link onClick={handleFormsNav} className="forms-nav-link" to={"add-skill"}>Add Skill</Link></li>
+                        <li><Link onClick={handleFormsNav} className="forms-nav-link" to={"add-portfolio"}>Add Portfolio</Link></li>
+                        <li><Link onClick={handleFormsNav} className="forms-nav-link" to={"add-testimonial"}>Add Testimonial</Link></li>
                     </ul>
                 </div>
             </div>

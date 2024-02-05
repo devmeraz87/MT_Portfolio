@@ -1,12 +1,23 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { AiFillPlusCircle } from "react-icons/ai";
+import { collection, addDoc, Timestamp } from "firebase/firestore"
+import { db } from "../../../../../config/firebase/firebase.config";
+import { useSkillsListContext } from "../../../../../contexts/skillListsContext/skillListContext";
+
+import toast from 'react-hot-toast';
+import { useRef } from "react";
+import { getBase64Image } from "../../../../../hooks/getBase64/getBase64";
 
 const AddSkillForm = () => {
     const [blob, setBlob] = useState(null);
-    const [imageFile, setImageFile] = useState("");
+    const [imageFile, setImageFile] = useState(null);
     const [fileError, setFileError] = useState(false);
+    const [formIsSubmited, setFormIsSubmited] = useState(false);
+    const formEl = useRef();
+
     const { register, handleSubmit, watch, formState: { errors } } = useForm({mode: "onChange"});
+    const { setNoPosts } = useSkillsListContext();
 
 
     const skillName = watch("skillName");
@@ -19,16 +30,17 @@ const AddSkillForm = () => {
 
         if(file) {
             const _blob = URL.createObjectURL(file);
-
-            if(_blob) { 
-                setBlob(_blob);
+            setBlob(_blob);
+            try {
+                getBase64Image(520, file, setImageFile);
+            } catch (err) {
+                toast.error(`${err.message} \ Alert from Add Skill.jsx line 54`, {position: "top-right"})
             }
-
-            setImageFile(file);
 
         } else {
             setBlob(null);
             setFileError(true);
+            setImageFile(null)
         }
     }
 
@@ -36,17 +48,52 @@ const AddSkillForm = () => {
     const onSubmit = async (data) => {
         const { skillName, skillLabel, color } = data;
 
+        setFormIsSubmited(true)
+
         const postData = {
             skillName,
             skillLabel,
             color,
+            photoUrl: imageFile,
+            createdAt: Timestamp.now().toDate()
         }
+
+        try {
+            if(imageFile) {
+                const SkillPostRef = collection(db, "Skills");
+                
+                addDoc(SkillPostRef, postData)
+                    .then(() => {
+                        toast.success("Skill added sucessfully", {position: "top-right"});
+                        formEl.current.reset();
+                        setNoPosts(false)
+                        setImageFile(null);
+                        setBlob(null);
+                        setFormIsSubmited(false);
+                    })
+                    .catch((err) => {
+                        alert()
+                        toast.error(`${err.message} \ Faild to add Skill`, {position: "top-right"});
+                        formEl.current.reset();
+                        setImageFile(null);
+                        setBlob(null);
+                        setFormIsSubmited(false);
+                    })
+
+            } else {
+                toast.error("No file", {position: "top-right"})
+            }
+
+        } catch (err) {
+            toast.error(`${err.message} Error on catch block line 106 add skill.jsx`, {position: "top-right"})
+        }
+
     }
 
  
     return (
         <>
-            <form action="" id="addSkillForm" onSubmit={handleSubmit(onSubmit)}>
+            <form ref={formEl} id="addSkillForm" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                     <label className="label">Skill Name</label>
                     <input 
@@ -140,7 +187,7 @@ const AddSkillForm = () => {
                 <div className="form-group">
                     <div className="button-group">
                         {imageFile && skillName && skillLabel && color ? (
-                            <button type="submit" className="submit-button">Submit</button>
+                            <button type="submit" className="submit-button">{formIsSubmited ? "Submiting..." : "Submit"}</button>
                         ) : (
                             <div className="submit-button disabled">Submit</div>
                         )}
